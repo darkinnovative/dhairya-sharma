@@ -1,0 +1,60 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+dist/
+node_modules/
+.github/
+.vscode/
+.vscode-test/
+.vscode-oss/
+.vscode-oss-dev/
+.vscode-oss-dev-test/
+.vscode-oss-dev-test/
+.vscode-oss-dev-test-remote/
+.vscode-oss-dev-test-remote-2/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.orig
+
+# Build directories 
+build/
+coverage/
+out/
+lib/
+temp/
+# Dependency directories
+bower_components/
+jspm_packages/
+# Compiled source #
+*.compiled.js
+*.min.js
+*.bundle.js
+*.map
+# Logs and databases
+*.log
+*.sql   
