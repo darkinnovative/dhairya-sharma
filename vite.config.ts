@@ -8,5 +8,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/dhairya_sharma/', // must match your repo name
+  base: './', // 👈 use relative base path for Versal compatibility
 })
