@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,9 +10,28 @@
     scroll-behavior: smooth;
   }
   
+  html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll during transitions */
+    transform: translateX(0); /* Default position */
+    @apply bg-black dark:bg-black text-white dark:text-white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+  
+  /* Smooth transitions for all elements when switching themes */
+  * {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
